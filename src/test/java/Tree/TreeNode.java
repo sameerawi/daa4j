@@ -1,6 +1,6 @@
 package Tree;
 
-import java.util.Collections;
+import java.util.Arrays;
 
 public class TreeNode
 {
@@ -17,7 +17,12 @@ public class TreeNode
         this.right = right;
     }
 
-    public static TreeNode fromArray(Integer[] data) {
+    public static TreeNode fromValues(Integer ... args)
+    {
+        return fromArray(args);
+    }
+
+    private static TreeNode fromArray(Integer[] data) {
         TreeNode root = new TreeNode(data[0]);
         form(root, 0, data);
         return root;
