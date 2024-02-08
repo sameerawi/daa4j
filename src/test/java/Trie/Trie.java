@@ -18,7 +18,7 @@ public class Trie
 
             if( temp == null)
             {
-                temp = new TrieNode(c, false);
+                temp = new TrieNode(false);
                 curNode.map.put(c, temp);
             }
 

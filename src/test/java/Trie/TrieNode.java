@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class TrieNode
 {
-    Character c;
     boolean endOfWord;
     Map<Character, TrieNode> map = new HashMap<Character, TrieNode>();
 
@@ -14,9 +13,8 @@ public class TrieNode
 
     }
 
-    public TrieNode(Character c, boolean endOfWord)
+    public TrieNode(boolean endOfWord)
     {
-        this.c = c;
         this.endOfWord = endOfWord;
     }
 

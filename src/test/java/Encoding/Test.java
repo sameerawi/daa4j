@@ -1,5 +1,7 @@
 package Encoding;
 
+import Encoding.RunLengthEncoding;
+
 public class Test
 {
     @org.junit.Test
